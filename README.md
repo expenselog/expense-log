@@ -7,13 +7,14 @@ This file needs to be organized better, and find a way to track/create/approve/d
 ###Plan
 #### First milestone is to make the program usable in command line, be able to persist and export data.
 
+* The program should be run by passing parameters to a built .jar file.
 * Commands - ideas for commands: exl (short for expense-log) "income" -> "inc", "expense" -> "exp" "add-category" -> "ac", "remove-category" -> "rc"
 * Add an expense with the command "exl exp 100' for example 
 * Add income with "exl inc 300"
 * Ability to handle different profiles. The above command adds exp/inc to the default user and as a different category
 * Ability to add expense to a certain category (this should throw error if category not exists)
 * Ability to add/remove category (exl add-category travel)
-** If removing category provide the existing expenses to find their new category
+** If removing a category, provide the existing expenses to find their new category
 * Persist data into a csv file under default.csv for the default profile.
 * Show the current balance "exl bal" <- "excl balance"
 * Show all months balances, show yearly balance(s), show certain month's balance
