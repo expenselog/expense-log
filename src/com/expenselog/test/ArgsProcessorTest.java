@@ -1,7 +1,9 @@
-package com.expenselog;
+package com.expenselog.test;
 
 import static org.junit.Assert.*;
 
+import com.expenselog.ArgsProcessor;
+import com.expenselog.MainArg;
 import org.junit.Test;
 
 public class ArgsProcessorTest {

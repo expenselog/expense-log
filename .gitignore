@@ -1,1 +1,5 @@
 /bin/
+/data
+/expense-log.jar
+/.idea/workspace.xml
+/out

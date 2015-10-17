@@ -3,7 +3,7 @@ package com.expenselog;
 public enum MainArg {
 	COMMAND("-c", "--command"), DATE("-d","--date"),
 	AMOUNT("-a","--amount"), CATEGORY("-ct","--category"),
-	DESCRIPTION("-dc","--description");
+	DESCRIPTION("-dc","--description"), PROFILE("-p","--profile");
 
 	private String shortKey;
 	private String longKey;
