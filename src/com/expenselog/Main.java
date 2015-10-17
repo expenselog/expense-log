@@ -6,7 +6,7 @@ public class Main {
 
 		ArgsProcessor ap = new ArgsProcessor(args);
 		ap.processArgs();
-		//Task t = ap.getTask();
+		Task t = TaskFactory.getTask(MainArg.COMMAND);
 
 	}
 
