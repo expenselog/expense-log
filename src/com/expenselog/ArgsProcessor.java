@@ -28,7 +28,7 @@ public class ArgsProcessor {
 	private void setMainArgs() {
 		for (int i = 0; i < args.length; i = i + 2) {
 
-			for (MainArg ma : MainArg.values()) {
+			for (MainArg ma : maArray) {
 				boolean added = ma.setValue(args[i], args[i + 1]);
 
 				if (added) {
@@ -65,6 +65,6 @@ public class ArgsProcessor {
 		return t;
 	}*/
 
-	String args[];
+	String[] args;
 	MainArg[] maArray;
 }
