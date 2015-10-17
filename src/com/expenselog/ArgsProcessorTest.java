@@ -9,18 +9,24 @@ public class ArgsProcessorTest {
 	@Test
 	public void testSetMainArgs() {
 
-		String [] allShortArgsWithProperValues = {minusC, command,
-													minusD, date,
-													minusA, amount,
-													minusCT, category,
-													minusDC, description};
+		/*String [] allShortArgsWithValues = {minusC, command,
+												minusD, date,
+												minusA, amount,
+												minusCT, category,
+												minusDC, description};*/
 
-		ArgsProcessor ap = new ArgsProcessor(allShortArgsWithProperValues);
+		String [] allShortArgsWithValuesReverse = {minusDC, description,
+															minusCT, category,
+															minusA, amount,
+															minusD, date,
+															minusC, command};
+
+		ArgsProcessor ap = new ArgsProcessor(allShortArgsWithValuesReverse);
 		ap.processArgs();
 		
-		/*for (MainArg ma : MainArg.values()) {
+		for (MainArg ma : MainArg.values()) {
 			System.out.println(ma.name() + " " + ma);
-		}*/
+		}
 		
 		assertEquals(MainArg.COMMAND.toString(), command);
 		assertEquals(MainArg.DATE.toString(), date);
